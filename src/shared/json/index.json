@@ -1,0 +1,237 @@
+{
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "Acme Corp",
+      "founded": 1999,
+      "cvCount": 120,
+      "address": "123 Business Lane, New York, NY",
+      "contact": "info@acmecorp.com",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Globex Inc",
+      "founded": 2005,
+      "cvCount": 85,
+      "address": "456 Market Street, San Francisco, CA",
+      "contact": "contact@globex.com",
+      "status": "deactive"
+    },
+    {
+      "id": 3,
+      "name": "Initech",
+      "founded": 2010,
+      "cvCount": 45,
+      "address": "789 Startup Ave, Austin, TX",
+      "contact": "support@initech.com",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Umbrella Corp",
+      "founded": 1985,
+      "cvCount": 200,
+      "address": "321 Fictional Blvd, Raccoon City",
+      "contact": "hr@umbrella.com",
+      "status": "deactive"
+    },
+    {
+      "id": 5,
+      "name": "Wayne Enterprises",
+      "founded": 1972,
+      "cvCount": 150,
+      "address": "100 Gotham St, Gotham City",
+      "contact": "contact@wayne.com",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Stark Industries",
+      "founded": 1980,
+      "cvCount": 170,
+      "address": "200 Stark Tower, New York, NY",
+      "contact": "info@starkindustries.com",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "name": "Hooli",
+      "founded": 2004,
+      "cvCount": 95,
+      "address": "400 Silicon Valley Blvd, Palo Alto, CA",
+      "contact": "support@hooli.com",
+      "status": "deactive"
+    },
+    {
+      "id": 8,
+      "name": "Soylent Corp",
+      "founded": 2020,
+      "cvCount": 60,
+      "address": "123 Nutrition St, Los Angeles, CA",
+      "contact": "hello@soylent.com",
+      "status": "active"
+    },
+    {
+      "id": 9,
+      "name": "Cyberdyne Systems",
+      "founded": 1984,
+      "cvCount": 140,
+      "address": "1000 AI Parkway, Los Angeles, CA",
+      "contact": "info@cyberdyne.com",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "name": "Tyrell Corporation",
+      "founded": 2019,
+      "cvCount": 55,
+      "address": "101 Blade Runner Ave, Los Angeles, CA",
+      "contact": "contact@tyrell.com",
+      "status": "deactive"
+    },
+    {
+      "id": 11,
+      "name": "Pied Piper",
+      "founded": 2013,
+      "cvCount": 80,
+      "address": "500 Silicon Valley Blvd, Palo Alto, CA",
+      "contact": "team@piedpiper.com",
+      "status": "active"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Acme Corp",
+      "address": "123 Business Lane, New York, NY",
+      "contact": "info@acmecorp.com",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Globex Inc",
+      "address": "456 Market Street, San Francisco, CA",
+      "contact": "contact@globex.com",
+      "status": "deactive"
+    },
+    {
+      "id": 3,
+      "name": "Initech",
+      "address": "789 Startup Ave, Austin, TX",
+      "contact": "support@initech.com",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Umbrella Corp",
+      "address": "321 Fictional Blvd, Raccoon City",
+      "contact": "hr@umbrella.com",
+      "status": "deactive"
+    },
+    {
+      "id": 5,
+      "name": "Wayne Enterprises",
+      "address": "100 Gotham St, Gotham City",
+      "contact": "contact@wayne.com",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Stark Industries",
+      "address": "200 Stark Tower, New York, NY",
+      "contact": "info@starkindustries.com",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "name": "Hooli",
+      "address": "400 Silicon Valley Blvd, Palo Alto, CA",
+      "contact": "support@hooli.com",
+      "status": "deactive"
+    },
+    {
+      "id": 8,
+      "name": "Soylent Corp",
+      "address": "123 Nutrition St, Los Angeles, CA",
+      "contact": "hello@soylent.com",
+      "status": "active"
+    },
+    {
+      "id": 9,
+      "name": "Cyberdyne Systems",
+      "address": "1000 AI Parkway, Los Angeles, CA",
+      "contact": "info@cyberdyne.com",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "name": "Tyrell Corporation",
+      "address": "101 Blade Runner Ave, Los Angeles, CA",
+      "contact": "contact@tyrell.com",
+      "status": "deactive"
+    },
+    {
+      "id": 11,
+      "name": "Pied Piper",
+      "address": "500 Silicon Valley Blvd, Palo Alto, CA",
+      "contact": "team@piedpiper.com",
+      "status": "active"
+    }
+  ],
+  "cities": [
+    { "value": "jakarta", "label": "Jakarta" },
+    { "value": "surabaya", "label": "Surabaya" },
+    { "value": "bandung", "label": "Bandung" },
+    { "value": "medan", "label": "Medan" },
+    { "value": "bekasi", "label": "Bekasi" },
+    { "value": "tangerang", "label": "Tangerang" },
+    { "value": "depok", "label": "Depok" },
+    { "value": "semarang", "label": "Semarang" },
+    { "value": "palembang", "label": "Palembang" },
+    { "value": "makassar", "label": "Makassar" },
+    { "value": "bogor", "label": "Bogor" },
+    { "value": "padang", "label": "Padang" },
+    { "value": "malang", "label": "Malang" },
+    { "value": "denpasar", "label": "Denpasar" },
+    { "value": "samarinda", "label": "Samarinda" },
+    { "value": "batam", "label": "Batam" },
+    { "value": "pekanbaru", "label": "Pekanbaru" },
+    { "value": "bandar_lampung", "label": "Bandar Lampung" },
+    { "value": "tasikmalaya", "label": "Tasikmalaya" },
+    { "value": "pontianak", "label": "Pontianak" },
+    { "value": "banjarmasin", "label": "Banjarmasin" },
+    { "value": "balikpapan", "label": "Balikpapan" },
+    { "value": "jambi", "label": "Jambi" },
+    { "value": "surakarta", "label": "Surakarta" },
+    { "value": "mataram", "label": "Mataram" },
+    { "value": "kupang", "label": "Kupang" },
+    { "value": "cirebon", "label": "Cirebon" },
+    { "value": "ambon", "label": "Ambon" },
+    { "value": "jayapura", "label": "Jayapura" },
+    { "value": "manado", "label": "Manado" },
+    { "value": "bengkulu", "label": "Bengkulu" },
+    { "value": "yogyakarta", "label": "Yogyakarta" },
+    { "value": "sorong", "label": "Sorong" },
+    { "value": "batu", "label": "Batu" },
+    { "value": "kediri", "label": "Kediri" },
+    { "value": "bitung", "label": "Bitung" },
+    { "value": "palu", "label": "Palu" },
+    { "value": "ternate", "label": "Ternate" },
+    { "value": "palopo", "label": "Palopo" },
+    { "value": "kendari", "label": "Kendari" },
+    { "value": "sukabumi", "label": "Sukabumi" },
+    { "value": "purwokerto", "label": "Purwokerto" },
+    { "value": "madiun", "label": "Madiun" },
+    { "value": "probolinggo", "label": "Probolinggo" },
+    { "value": "blitar", "label": "Blitar" },
+    { "value": "magelang", "label": "Magelang" },
+    { "value": "pekalongan", "label": "Pekalongan" },
+    { "value": "salatiga", "label": "Salatiga" },
+    { "value": "tegal", "label": "Tegal" },
+    { "value": "bima", "label": "Bima" },
+    { "value": "pasuruan", "label": "Pasuruan" },
+    { "value": "lhokseumawe", "label": "Lhokseumawe" },
+    { "value": "serang", "label": "Serang" }
+  ]
+}

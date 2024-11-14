@@ -233,5 +233,21 @@
     { "value": "pasuruan", "label": "Pasuruan" },
     { "value": "lhokseumawe", "label": "Lhokseumawe" },
     { "value": "serang", "label": "Serang" }
-  ]
+  ],
+  "SuppliersName":[
+    {
+      "id": 1,
+      "image":"/public/assets/Upload-Picture (1).png",
+      "tittle": "Supplier's name",
+      "location": "Jakarta , Indonesia",
+      "foundedin": 2003,
+      "Website": "www.website.com",
+      "email": "example@email.com",
+      "status": "Active",
+      "phonenumber": "+123 456 789",
+      "address": "Street # 1 , Jakarta Indonesia"
+    }
+
+    ]
+  
 }

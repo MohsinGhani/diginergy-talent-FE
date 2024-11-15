@@ -4,9 +4,21 @@ import Image from 'next/image';
 import supplierimg from '../../../public/assets/Upload-Picture (1).png';
 import suppliersData from '../../shared/json/index.json';
 import AddNote from '../AddNote';
-import SupplierTable from '../SuppliersTable';
+import SuppliersNameTable from '../SuppliersNameTable/index'
 
 const SuppliersIndex = () => {
+
+  const handleSwitchChange = (id: number, checked: boolean) => {
+    setData((prevData: any[]) =>
+      prevData.map((item) =>
+        item.id === id
+          ? { ...item, status: checked ? "active" : "deactive" }
+          : item
+      )
+    );
+  };
+  
+
   return (
     <div className=" px-4 sm:px-6 lg:px-36  pt-8 lg:w-auto bg-[#F8F8F8] h-auto">
       {suppliersData.SuppliersName.map((supplier) => (
@@ -24,9 +36,15 @@ const SuppliersIndex = () => {
             <div className="flex items-center gap-5 ">
               <h1 className="font-semibold text-2xl font-dmSans text-[#141414]">{supplier.tittle}</h1>
               <div className="flex items-center gap-2">
-                <CommonSwitch />
-                <p className="text-[#000000D9] font-dmSans font-normal text-base">{supplier.status}</p>
-              </div>
+  <CommonSwitch
+    checked={supplier.status === "active"} 
+    onChange={(checked) => handleSwitchChange(supplier.id, checked)} 
+  />
+  <p className="text-[#000000D9] font-dmSans font-normal text-base">
+    {supplier.status.charAt(0).toUpperCase() + supplier.status.slice(1)} 
+  </p>
+</div>
+
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mt-4 sm:align-middle">
@@ -62,7 +80,7 @@ const SuppliersIndex = () => {
       ))}
              <AddNote/>
              <div className='mt-7'>
-             <SupplierTable/>
+             <SuppliersNameTable/>
 
              </div>
 
@@ -71,3 +89,5 @@ const SuppliersIndex = () => {
 };
 
 export default SuppliersIndex;
+
+

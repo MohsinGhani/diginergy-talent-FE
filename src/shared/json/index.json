@@ -233,5 +233,107 @@
     { "value": "pasuruan", "label": "Pasuruan" },
     { "value": "lhokseumawe", "label": "Lhokseumawe" },
     { "value": "serang", "label": "Serang" }
-  ]
+  ],
+  "SuppliersName":[
+    {
+      "id": 1,
+      "image":"/public/assets/Upload-Picture (1).png",
+      "tittle": "Supplier's name",
+      "location": "Jakarta , Indonesia",
+      "foundedin": 2003,
+      "Website": "www.website.com",
+      "email": "example@email.com",
+      "status": "active",
+      "phonenumber": "+123 456 789",
+      "address": "Street # 1 , Jakarta Indonesia"
+    }
+
+    ],
+    "UploadedcvsName":[
+      {
+        "id":1,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"active"        
+
+      },
+      {
+        "id":2,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"deactive"        
+
+      }, {
+        "id":3,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"active"        
+
+      }, {
+        "id":4,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"deactive"        
+
+      }, {
+        "id":5,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"active"        
+
+      }, {
+        "id":6,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"deactive"        
+
+      },
+       {
+        "id":7,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"active"        
+      },
+       {
+        "id":8,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"deactive"        
+
+      },
+      {
+        "id":9,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"active"        
+      }, {
+        "id":10,
+        "name":"John Doe",
+        "location":"Jakarta , Indonesia",
+        "yearsofexperience":"05 years experience",
+        "industry":"IT-Consultancy Services",
+        "status":"deactive"        
+      }
+    ]
+    
+    
+  
 }

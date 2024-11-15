@@ -18,9 +18,8 @@ import CommonModal from "../shared/Modal";
 import CommonTypography from "../shared/Typography";
 import CommonInput from "../shared/InputField";
 import CommonSelect from "../shared/Select";
-import CommonDatePicker from "../shared/Datepicker";
 
-const SupplierTable = () => {
+const SuppliersNameTable = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [filter, setFilter] = useState("all");
@@ -86,26 +85,22 @@ const SupplierTable = () => {
       sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
-      title: "Founded in",
-      dataIndex: "founded",
-      key: "founded",
-      sorter: (a, b) => a.founded - b.founded,
+      title: "Location",
+      dataIndex: "location",
+      key: "location",
+      sorter: (a, b) => a.location.localeCompare(b.location),
     },
     {
-      title: "No. of CV's",
-      dataIndex: "cvCount",
-      key: "cvCount",
-      sorter: (a, b) => a.cvCount - b.cvCount,
+      title: "Years of Experience",
+      dataIndex: "yearsofexperience",
+      key: "yearsofexperience",
+      sorter: (a, b) => a.yearsofexperience.localeCompare(b.yearsofexperience),
     },
     {
-      title: "Address",
-      dataIndex: "address",
-      key: "address",
-    },
-    {
-      title: "Contact details",
-      dataIndex: "contact",
-      key: "contact",
+      title: "Industry",
+      dataIndex: "industry",
+      key: "industry",
+      sorter: (a, b) => a.industry.localeCompare(b.industry),
     },
     {
       title: "Status",
@@ -123,7 +118,6 @@ const SupplierTable = () => {
         </div>
       ),
     },
-    
     {
       title: "Actions",
       key: "action",
@@ -153,7 +147,7 @@ const SupplierTable = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const fetchedData = sharedJson.suppliers;
+      const fetchedData = sharedJson.UploadedcvsName; // Updated data source
       setData(fetchedData);
       setFilteredData(fetchedData);
       setLoading(false);
@@ -181,7 +175,7 @@ const SupplierTable = () => {
   return (
     <div className="flex flex-col gap-4">
       <CommonTable
-        tableTitle="Supplier's List"
+        tableTitle="Uploaded CV's"
         handleAddButtonClick={() => setIsAddModalOpen(!isAddModalOpen)}
         onFilterChange={handleFilterChange}
         onSearch={handleSearch}
@@ -190,7 +184,7 @@ const SupplierTable = () => {
         loading={loading}
       />
       <CommonModal
-        title="Add Supplier"
+        title="Add Supplier's"
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
         onOk={() => setIsAddModalOpen(false)}
@@ -205,12 +199,7 @@ const SupplierTable = () => {
               <Form.Item
                 label="Supplier's name"
                 name="name"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter supplier's name",
-                  },
-                ]}
+                rules={[{ required: true, message: "Please enter supplier's name" }]}
               >
                 <CommonInput placeholder="Enter name" />
               </Form.Item>
@@ -219,12 +208,7 @@ const SupplierTable = () => {
               <Form.Item
                 label="Location"
                 name="location"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please select supplier's location",
-                  },
-                ]}
+                rules={[{ required: true, message: "Please select supplier's location" }]}
               >
                 <CommonSelect
                   options={sharedJson.cities}
@@ -233,81 +217,28 @@ const SupplierTable = () => {
               </Form.Item>
             </Col>
           </Row>
+          
           <Row gutter={16}>
             <Col span={12}>
               <Form.Item
-                label="Founded in"
-                name="founded"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please select year of establishment",
-                  },
-                ]}
+                label="Industry"
+                name="Industry"
+                rules={[{ required: true, message: "Please enter Industry" }]}
               >
-                <CommonDatePicker
-                  placeholder="Select year"
-                  className="w-full"
-                />
+                <CommonInput placeholder="Enter Industry" />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item
-                label="Website"
-                name="website"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter supplier's website",
-                  },
-                ]}
+                label="Years of experience"
+                name="Years of experience"
+                rules={[{ required: true, message: "Please enter Years of experience" }]}
               >
-                <CommonInput placeholder="www.example.com" />
+                <CommonInput placeholder="Enter Years of experience" />
               </Form.Item>
             </Col>
           </Row>
-          <Row gutter={16}>
-            <Col span={12}>
-              <Form.Item
-                label="Email"
-                name="email"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter supplier's email",
-                  },
-                ]}
-              >
-                <CommonInput placeholder="Enter email" />
-              </Form.Item>
-            </Col>
-            <Col span={12}>
-              <Form.Item
-                label="Phone no"
-                name="phone"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter supplier's phone number",
-                  },
-                ]}
-              >
-                <CommonInput placeholder="Enter phone number" />
-              </Form.Item>
-            </Col>
-          </Row>
-          <Form.Item
-            label="Address"
-            name="address"
-            rules={[
-              {
-                required: true,
-                message: "Please enter supplier's address",
-              },
-            ]}
-          >
-            <CommonInput placeholder="Enter address" />
-          </Form.Item>
+          
         </Form>
       </CommonModal>
       {contextHolder}
@@ -315,4 +246,4 @@ const SupplierTable = () => {
   );
 };
 
-export default SupplierTable;
+export default SuppliersNameTable;
